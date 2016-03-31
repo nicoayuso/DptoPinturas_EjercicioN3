@@ -1,27 +1,15 @@
-function Rectangulo(){
-    var num1 = document.getElementById("Largo").value;
-    var num2 = document.getElementById("Ancho").value;
+function FahrenheitCentigrados(){
+    var num1 = document.getElementById("Temperatura").value;    
+    var resultado = (parseFloat(num1) - 32)*(5/9);
     
-    
-    var resultado = (parseFloat(num1) + parseFloat(num2))*2*3;
-    alert("El resultado es: " + resultado); 
+    alert("Fahrenheit: " + num1 + "\nCentigrados son: " + resultado); 
 }
 
-function Circulo(){
+function CentigradosFahrenheit(){
     
-    var num3 = document.getElementById("Radio").value;
+    var num1 = document.getElementById("Temperatura").value;    
+    var resultado = (parseFloat(num1)*(5/9) )+32;
     
-    var resultado = (parseFloat(num3) * parseFloat(num3))* parseFloat("3,14");
-    alert("El resultado es: " + resultado); 
+    alert("Centigrados: " + num1 + "\nFahrenheit son: " + resultado); 
 }
 
-function Materiales(){
-    
-   var num1 = document.getElementById("Largo").value;
-    var num2 = document.getElementById("Ancho").value;  
-    
-    var resultado = (parseFloat(num1) + parseFloat(num2));
-    alert("Bolsas de Cemento: " + resultado*2 +
-          "\nBolsas de Cal: " + resultado*3); 
-    
-}
